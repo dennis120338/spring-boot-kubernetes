@@ -20,7 +20,7 @@ spec:
           image: swr.cn-north-1.myhuaweicloud.com/dennis120338/spring-boot-kubernetes:latest
           imagePullPolicy: Always
           imagePullSecrets:
-            - name: regsecret
+            - name: registry-key
           ports:
             - containerPort: 8080
               protocol: TCP
