@@ -15,12 +15,12 @@ spec:
       labels:
         app: spring-boot-kubernetes
     spec:
+      imagePullSecrets:
+        - name: registry-key
       containers:
         - name: spring-boot-kubernetes
           image: swr.cn-north-1.myhuaweicloud.com/dennis120338/spring-boot-kubernetes:latest
           imagePullPolicy: Always
-          imagePullSecrets:
-            - name: registry-key
           ports:
             - containerPort: 8080
               protocol: TCP
