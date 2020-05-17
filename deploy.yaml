@@ -24,6 +24,12 @@ spec:
           ports:
             - containerPort: 8080
               protocol: TCP
+          env:
+            - name: MYSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: testconfig
+                  key: host
           volumeMounts:
             - name: config-volume
               mountPath: /tmp/config4
