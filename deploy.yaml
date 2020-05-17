@@ -18,6 +18,7 @@ spec:
       containers:
         - name: spring-boot-kubernetes
           image: swr.cn-north-1.myhuaweicloud.com/dennis120338/spring-boot-kubernetes:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
               protocol: TCP
