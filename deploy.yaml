@@ -33,7 +33,7 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /tmp/config4
-            - name: empty-dir
+            - name: emptydir
               mountPath: /empty-dir
             - name: dennis
               mountPath: /dennis
@@ -42,7 +42,7 @@ spec:
         - name: config-volume
           configMap:
             name: testconfig
-        - name: empty-dir
+        - name: emptydir
           emptyDir: {}
         - name: dennis
           hostPath:
