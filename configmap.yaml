@@ -1,0 +1,8 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: testconfig
+  namespace: default
+data:
+  name: dennis
+  age: '18'
